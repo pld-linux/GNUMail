@@ -5,7 +5,7 @@ Version:	1.1.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.collaboration-world.com/cgi-bin/collaboration-world/project/download.cgi/GNUMail-1.1.0.tar.gz?rid=81
+Source0:	http://www.collaboration-world.com/gnumail.data/releases/Stable/%{name}-%{version}.tar.gz
 # Source0-md5:	8b9d1030849dbc91c2d28716c6fceef2
 URL:		http://www.collaboration-world.com/gnumail/
 BuildRequires:	Pantomime-devel >= 1.0.5
