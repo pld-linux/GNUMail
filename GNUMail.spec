@@ -1,12 +1,12 @@
 Summary:	Mail application for GNUstep
 Summary(pl):	Aplikacja pocztowa dla ¶rodowiska GNUstep
 Name:		GNUMail
-Version:	1.0.3
+Version:	1.1.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.gnustep.org/pub/gnustep/usr-apps/%{name}-%{version}.tar.gz
-# Source0-md5:	4f6de819c37b61ce95752aa8932e9be9
+Source0:	http://www.collaboration-world.com/cgi-bin/collaboration-world/project/download.cgi/GNUMail-1.1.0.tar.gz?rid=81
+# Source0-md5:	8b9d1030849dbc91c2d28716c6fceef2
 URL:		http://www.collaboration-world.com/gnumail/
 BuildRequires:	Pantomime-devel >= 1.0.5
 BuildRequires:	gnustep-extensions-devel
