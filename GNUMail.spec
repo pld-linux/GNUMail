@@ -10,10 +10,10 @@ Source0:	%{name}-cvs-%{cvs}.tar.gz
 # Source0-md5:	a20eded4368ce4363e67aac4540ac8d8
 Patch0:	%{name}-pass-arguments.patch
 URL:		http://www.collaboration-world.com/gnumail/
-BuildRequires:	Pantomime-devel >= 1.1.2
+BuildRequires:	Pantomime-devel >= 1.1.2-4
 BuildRequires:	gnustep-gui-devel >= 0.9.1
 BuildRequires:	Addresses-devel >= 0.4.6
-Requires:	Pantomime >= 1.1.2
+Requires:	Pantomime >= 1.1.2-4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _prefix         /usr/%{_lib}/GNUstep
