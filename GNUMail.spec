@@ -81,6 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/System/Applications/GNUMail.app/Resources/*.tiff
 %{_prefix}/System/Applications/GNUMail.app/Resources/Welcome
 %{_prefix}/System/Applications/GNUMail.app/Resources/English.lproj
+%lang(cs) %{_prefix}/System/Applications/GNUMail.app/Resources/Czech.lproj
 %lang(fr) %{_prefix}/System/Applications/GNUMail.app/Resources/French.lproj
 %lang(de) %{_prefix}/System/Applications/GNUMail.app/Resources/German.lproj
 %lang(es) %{_prefix}/System/Applications/GNUMail.app/Resources/Spanish.lproj
