@@ -9,7 +9,6 @@ Source0:	http://www.collaboration-world.com/gnumail.data/releases/Stable/%{name}
 # Source0-md5:	8b9d1030849dbc91c2d28716c6fceef2
 URL:		http://www.collaboration-world.com/gnumail/
 BuildRequires:	Pantomime-devel >= 1.1.0
-BuildRequires:	gnustep-extensions-devel
 BuildRequires:	gnustep-gui-devel >= 0.8.3
 Requires:	Pantomime >= 1.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
