@@ -1,0 +1,16 @@
+diff -ur GNUMail-orig/GNUMail_main.m GNUMail/GNUMail_main.m
+--- GNUMail-orig/GNUMail_main.m	2003-03-05 16:51:09.000000000 -0700
++++ GNUMail/GNUMail_main.m	2004-08-20 08:54:23.478591189 -0600
+@@ -33,6 +33,11 @@
+   NSAutoreleasePool *pool;
+   GNUMail *gnumail;
+ 
++#ifdef GS_PASS_ARGUMENTS
++	[NSProcessInfo initializeWithArguments: argv count: argc environment: env];
++#endif
++
++
+   pool = [[NSAutoreleasePool alloc] init];
+   gnumail = [[GNUMail alloc] init];
+ 
+Only in GNUMail: GNUMail_main.m~
