@@ -2,16 +2,16 @@ Summary:	Mail application for GNUstep
 Summary(pl):	Aplikacja pocztowa dla ¶rodowiska GNUstep
 Name:		GNUMail
 Version:	1.1.2
-Release:	2
+%define cvs 20040729
+Release:	3.%{cvs}.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.collaboration-world.com/gnumail.data/releases/Stable/%{name}-%{version}.tar.gz
-# Source0-md5:	fe6aac9a167c9e9f2a997f22e4041b30
-Patch0:		%{name}-Addresses.patch
+Source0:	%{name}-cvs-%{cvs}.tar.gz
+# Source0-md5:	a20eded4368ce4363e67aac4540ac8d8
 URL:		http://www.collaboration-world.com/gnumail/
 BuildRequires:	Pantomime-devel >= 1.1.2
 BuildRequires:	gnustep-gui-devel >= 0.9.1
-BuildRequires:	Addresses-devel >= 0.4
+BuildRequires:	Addresses-devel >= 0.4.6
 Requires:	Pantomime >= 1.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,7 +50,6 @@ nastêpuj±ce mo¿liwo¶ci:
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
 
 %build
 . %{_prefix}/System/Library/Makefiles/GNUstep.sh
