@@ -2,19 +2,20 @@ Summary:	Mail application for GNUstep
 Summary(pl):	Aplikacja pocztowa dla ¶rodowiska GNUstep
 Name:		GNUMail
 Version:	1.1.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.collaboration-world.com/gnumail.data/releases/Stable/%{name}-%{version}.tar.gz
 # Source0-md5:	fe6aac9a167c9e9f2a997f22e4041b30
+Patch0:		%{name}-Addresses.patch
 URL:		http://www.collaboration-world.com/gnumail/
 BuildRequires:	Pantomime-devel >= 1.1.2
 BuildRequires:	gnustep-gui-devel >= 0.9.1
-BuildRequires:	Addresses
+BuildRequires:	Addresses-devel >= 0.4
 Requires:	Pantomime >= 1.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/lib/GNUstep
+%define         _prefix         /usr/%{_lib}/GNUstep
 
 %define		libcombo	gnu-gnu-gnu
 %define		gsos		linux-gnu
@@ -22,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		gscpu		ix86
 %else
 # also s/alpha.*/alpha/, but we use only "alpha" arch for now
-%define		gscpu		%{_target_cpu}
+%define		gscpu		%(echo %{_target_cpu} | sed -e 's/amd64/x86_64/;s/ppc/powerpc/')
 %endif
 
 %description
@@ -49,6 +50,7 @@ nastêpuj±ce mo¿liwo¶ci:
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 . %{_prefix}/System/Library/Makefiles/GNUstep.sh
@@ -97,5 +99,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_prefix}/System/Library/GNUMail/*.prefs
 %{_prefix}/System/Library/GNUMail/*.prefs/Resources
 %attr(755,root,root) %{_prefix}/System/Library/GNUMail/*.prefs/%{gscpu}
+%dir %{_prefix}/System/Library/GNUMail/Import.bundle
+%{_prefix}/System/Library/GNUMail/Import.bundle/Resources
+%attr(755,root,root) %{_prefix}/System/Library/GNUMail/Import.bundle/%{gscpu}
 
 %{_prefix}/System/Library/Libraries/%{gscpu}/%{gsos}/%{libcombo}/lib*.so.*
