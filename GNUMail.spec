@@ -7,9 +7,10 @@ License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnustep.org/pub/gnustep/usr-apps/%{name}-%{version}.tar.gz
 # Source0-md5:	4f6de819c37b61ce95752aa8932e9be9
-BuildRequires:	Pantomime-devel
+URL:		http://www.collaboration-world.com/gnumail/
+BuildRequires:	Pantomime-devel >= 1.0.5
 BuildRequires:	gnustep-extensions-devel
-BuildRequires:	gnustep-gui-devel
+BuildRequires:	gnustep-gui-devel >= 0.8.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _prefix         /usr/lib/GNUstep
