@@ -8,6 +8,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-cvs-%{cvs}.tar.gz
 # Source0-md5:	a20eded4368ce4363e67aac4540ac8d8
+Patch0:	%{name}-pass-arguments.patch
 URL:		http://www.collaboration-world.com/gnumail/
 BuildRequires:	Pantomime-devel >= 1.1.2
 BuildRequires:	gnustep-gui-devel >= 0.9.1
@@ -50,6 +51,7 @@ nastêpuj±ce mo¿liwo¶ci:
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 . %{_prefix}/System/Library/Makefiles/GNUstep.sh
