@@ -3,7 +3,7 @@ Summary(pl):	Aplikacja pocztowa dla ¶rodowiska GNUstep
 Name:		GNUMail
 Version:	1.1.2
 %define cvs 20040729
-Release:	3.%{cvs}.3
+Release:	3.%{cvs}.4
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-cvs-%{cvs}.tar.gz
