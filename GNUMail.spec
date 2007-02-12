@@ -1,5 +1,5 @@
 Summary:	Mail application for GNUstep
-Summary(pl):	Aplikacja pocztowa dla ¶rodowiska GNUstep
+Summary(pl.UTF-8):   Aplikacja pocztowa dla Å›rodowiska GNUstep
 Name:		GNUMail
 Version:	1.1.2
 %define cvs 20040729
@@ -38,15 +38,15 @@ following features:
 - Address Book with groups support
 - and more...
 
-%description -l pl
-GNUMail.app to w pe³ni funkcjonalna aplikacja pocztowa. Oferuje
-nastêpuj±ce mo¿liwo¶ci:
-- obs³ugê hierarchicznych skrzynek (lokalnych lub IMAP)
-- obs³ugê wielu kont POP3 i IMAP
-- wiele sposobów dorêczania (SMTP lub program lokalny)
-- pe³n± obs³ugê MIME
-- obs³ugê filtrów
-- ksi±¿kê adresow± z obs³ug± grup
+%description -l pl.UTF-8
+GNUMail.app to w peÅ‚ni funkcjonalna aplikacja pocztowa. Oferuje
+nastÄ™pujÄ…ce moÅ¼liwoÅ›ci:
+- obsÅ‚ugÄ™ hierarchicznych skrzynek (lokalnych lub IMAP)
+- obsÅ‚ugÄ™ wielu kont POP3 i IMAP
+- wiele sposobÃ³w dorÄ™czania (SMTP lub program lokalny)
+- peÅ‚nÄ… obsÅ‚ugÄ™ MIME
+- obsÅ‚ugÄ™ filtrÃ³w
+- ksiÄ…Å¼kÄ™ adresowÄ… z obsÅ‚ugÄ… grup
 - i inne...
 
 %prep
