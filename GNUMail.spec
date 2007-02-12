@@ -1,5 +1,5 @@
 Summary:	Mail application for GNUstep
-Summary(pl.UTF-8):   Aplikacja pocztowa dla środowiska GNUstep
+Summary(pl.UTF-8):	Aplikacja pocztowa dla środowiska GNUstep
 Name:		GNUMail
 Version:	1.1.2
 %define cvs 20040729
