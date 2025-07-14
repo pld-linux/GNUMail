@@ -51,7 +51,7 @@ następujące możliwości:
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 . %{_prefix}/System/Library/Makefiles/GNUstep.sh
